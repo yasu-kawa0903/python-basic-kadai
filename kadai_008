@@ -1,0 +1,19 @@
+import random
+
+multiple_3 = "Fizz"
+multiple_5 = "Buzz"
+multiple_3_and_5 = "FizzBuzz"
+
+var = random.randint(1, 30)
+print(var)
+
+if var % 3 == 0 and var % 5 == 0:
+  print(multiple_3_and_5)
+
+elif var % 3 == 0:
+  print(multiple_3)
+
+elif var % 5 == 0:
+  print(multiple_5)
+
+else: print(var)
