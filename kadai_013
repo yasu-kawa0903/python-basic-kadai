@@ -1,0 +1,5 @@
+def cal_in_tax(price, tax):
+  tax_included = price * (1+tax)
+  print(tax_included)
+
+cal_in_tax(10000,0.1)
