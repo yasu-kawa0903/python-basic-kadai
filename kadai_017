@@ -1,0 +1,20 @@
+human_names = ["侍太郎","侍花子", "侍一郎", "侍二郎", "侍三郎"]
+human_ages = [45, 43, 21, 19, 15]
+
+
+class Human():
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def check_adult(self, name, age):
+    if age >= 20:
+      print(self.name + "は大人です")
+    else:
+      print(self.name + "は大人ではありません")
+
+
+for (human_name, human_age) in zip(human_names, human_ages):
+
+  human = Human(human_name, human_age)
+  human.check_adult(human_name, human_age)
